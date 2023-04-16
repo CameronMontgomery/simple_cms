@@ -1,0 +1,12 @@
+<h1>This is the hello page</h1>
+
+<% @array.each do |n| %>
+  <p><%= n %></p>
+<% end %>
+
+<br />
+<p>Parameters from the previous request</p>
+<%= "Page #{@page} | ID #{@id} " %>
+<br />
+
+<%= link_to('Go Home', {action: 'index'}) %>

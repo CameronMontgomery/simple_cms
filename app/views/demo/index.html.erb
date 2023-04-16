@@ -1,2 +1,7 @@
-<h1>Hello World, Demo</h1>
-<p>Find me in app/views/demo/index.html.erb</p>
+<h1>This is the Index Page</h1>
+<p>located at app/views/demo/index.html.erb</p>
+<%= link_to('Click Here', '/demo/hello') %>
+
+<br />
+
+<%= link_to('Hello with parameters', {action: 'hello', page: 5, id: 20}) %>
