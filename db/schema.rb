@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_17_151833) do
+ActiveRecord::Schema.define(version: 2023_04_19_162559) do
 
-  create_table "posts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "pages", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "subject_id"
     t.string "name"
     t.string "permalink"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2023_04_17_151833) do
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["subject_id"], name: "index_posts_on_subject_id"
+    t.index ["subject_id"], name: "index_pages_on_subject_id"
   end
 
   create_table "subjects", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

@@ -30,26 +30,4 @@ class DemoController < ApplicationController
     @page = params[:page]
   end
 
-  # private
-  # def find_contact(locale)
-  #
-  #   contact_numbers = {
-  #     north: '(303) 722-0630',
-  #     europe: '(020) 654-8455',
-  #     other: '+1 (987) 722-0630'
-  #   }
-  #
-  #   case locale
-  #   when 'ca'
-  #     region = 'north'
-  #   when 'us'
-  #     region = 'north'
-  #   when 'uk'
-  #     region = 'europe'
-  #   else
-  #     region = 'other'
-  #   end
-  #
-  #   contact_numbers[region]
-  # end
 end
