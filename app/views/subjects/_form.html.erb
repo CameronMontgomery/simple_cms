@@ -1,0 +1,15 @@
+<!--The f variable is provided by the calling render method since it is a local variable. Instance variables are automatically avaliable-->
+<table summary="Subject form fields">
+  <tr>
+    <th>Name</th>
+    <td><%= f.text_field(:name) %></td>
+  </tr>
+  <tr>
+    <th>Position</th>
+    <td><%= f.text_field(:position) %></td>
+  </tr>
+  <tr>
+    <th>Visible</th>
+    <td><%= f.text_field(:visible) %></td>
+  </tr>
+</table>

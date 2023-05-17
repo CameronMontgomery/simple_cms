@@ -4,25 +4,11 @@
   <h2>Create Subject</h2>
 
   <%= form_for(@subject, :url => subjects_path, :method => 'post') do |f| %>
-
-    <table summary="Subject form fields">
-      <tr>
-        <th>Name</th>
-        <td><%= f.text_field(:name) %></td>
-      </tr>
-      <tr>
-        <th>Position</th>
-        <td><%= f.text_field(:position) %></td>
-      </tr>
-      <tr>
-        <th>Visible</th>
-        <td><%= f.text_field(:visible) %></td>
-      </tr>
-    </table>
-
+<!-- render will display the partial template using the string (inputting its own _) supplied to partial and locals will provide -->
+<!-- any local variable values that the partial might need -->
+    <%= render(partial: 'form', locals: {f: f}) %>
     <div class="form-buttons">
       <%= f.submit("Create Subject") %>
     </div>
-
   <% end %>
 </div>

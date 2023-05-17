@@ -1,2 +1,14 @@
-<h1>Subjects#edit</h1>
-<p>Find me in app/views/subjects/edit.html.erb</p>
+<%= link_to("<< Back to List", subjects_path, :class => 'back-link') %>
+
+<div class="subjects edit">
+  <h2>Update Subject</h2>
+
+<!--  We Could use form_for(@subject, :url => subject_path(@subject), :method => 'patch') but its not needed -->
+  <%= form_for @subject do |f| %>
+    <%= render(partial: 'form', locals: {f: f}) %>
+    <div class="form-buttons">
+      <%= f.submit("Update Subject") %>
+    </div>
+
+  <% end %>
+</div>
